@@ -1,3 +1,45 @@
+# Deep Neural Network for Malaria Infected Cell Recognition
+
+## AIM
+
+To develop a deep neural network for Malaria infected cell recognition and to analyze the performance.
+
+## Problem Statement and Dataset
+Using data augmentation in the Convolutional Neural Network approach decreases the chances of overfitting. Thus, Malaria detection systems using deep learning proved to be faster than most of the traditional techniques. A Convolutional Neural Network was developed and trained to classify between the parasitized and uninfected smear blood cell images. The classical image features are extracted by CNN which can extract theimage features in three different categories – low-level, mid-level, and high-level features.
+
+## Neural Network Model
+![image](https://user-images.githubusercontent.com/75235813/194770274-1ee156eb-1eae-446c-9569-f15d717eb1c4.png)
+
+
+## DESIGN STEPS
+
+### STEP 1:
+Import tensorflow and preprocessing libraries
+
+### STEP 2:
+Read the dataset
+
+### STEP 3:
+Create an ImageDataGenerator to flow image data
+
+### STEP 4:
+Build the convolutional neural network model and train the model
+
+### STEP 5:
+Fit the model
+
+### STEP 6:
+Evaluate the model with the testing data
+
+### STEP 7:
+Fit the model
+
+### STEP 8:
+Plot the performance plot
+
+## PROGRAM
+
+```
 import os
 import pandas as pd
 import numpy as np
@@ -106,3 +148,33 @@ if(x_single_prediction==1):
 else:
     print("parasitized")
 
+```
+
+## OUTPUT
+
+### Training Loss, Validation Loss Vs Iteration Plot
+
+![image](https://user-images.githubusercontent.com/75235813/194770295-eef0e937-5204-451d-8275-a84d9c3f7b8f.png)
+
+
+
+
+### Classification Report
+![image](https://user-images.githubusercontent.com/75235813/194770361-de935d23-4be0-4cf6-983e-91ed4b0e1be5.png)
+
+
+
+
+### Confusion Matrix
+
+![image](https://user-images.githubusercontent.com/75235813/194770238-a0378cac-c6a6-4765-afed-09a8e7ea98b1.png)
+
+
+### New Sample Data Prediction
+
+![image](https://user-images.githubusercontent.com/75235813/194770224-1986638d-c45a-4773-b98c-f0a8689d7a1c.png)
+
+
+
+## RESULT
+Thus, a deep neural network for Malaria infected cell recognized and analyzed the performance .
